@@ -1,0 +1,75 @@
+body {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+*{
+    box-sizing: border-box;
+}
+    
+
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin:12px;
+    padding:12px;
+    left:0;
+    animation: 20s slider infinite;
+}
+ #slider figure img{
+     width: 20%;
+     margin:8px;
+     padding: 12px;
+     float:left;
+     background-color: #f99;
+     object-fit: cover;
+ }
+ figcaption {
+    background-color: #222;
+    font-size: 8px;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding-bottom: 2px;
+    text-align: left;
+}
+
+
+ 
+
+ @keyframes slider{
+     0% {
+         left:0;
+     }
+     20% {
+         left:0;
+     }
+     25% {
+         left: -100%;
+     }
+     45% {
+         left: -100%;
+     }
+     50% {
+         left:-200%;
+     }
+     70% {
+         left:-200%;
+     }
+     75% {
+         left:-300%;
+     }
+     95% {
+         left:-300%;
+     }
+     100% {
+         left:-400%;
+     }
+ }
